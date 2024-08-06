@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="layout.css">
+    <title>PlayFlix</title>
+
+    
+    </style>
+</head>
+<body>
+    <div id="divprincipal"><a href="menuinicial.php"> <b>Ranking de melhores séries</b></a></div>
+    
+    <a href="index.php"><div>Login (index)</div></a>
+
+    <a href="menuinicial.php">
+    <div>Menu Inicial</div></a>
+    
+    <a href="acao.php">    
+    <div>Ação</div>
+    </a>
+    <a href="terror.php">
+    <div>Terror</div>
+    </a>
+    <a href="anime.php">
+    <div>Animação</div>
+    </a>
+    <a href="contato.php">
+    <div>Contato</div>
+    </a>
+    <a href="membros.html">
+    <div>Membros</div>
+    </a>
+    <div id="divmembros">
+         <br><li> Membros: <br><br>
+
+        <ol> Rodrigo Pereira Vilas Boas <b>RGM:</b> 33544981</ol> <br> 
+        <ol> Wendell Lucca de Oliveira Moreira <b>RGM: </b> 29082447</ol> <br> 
+        <ol> Gabriel Henrique Oliveira Gouveia <b>RGM: </b> 1733611203</ol> <br><br></li>
+
+        <li>Projeto: <br>
+
+        <ol> Fizemos uma página sobre ranking de séries, iniciando com um login que direciona para o menu inicial, após o direcionamento para o menu inicial, na parte superior da página terá acesso a todas as categorias: gêneros, contato, membros e voltar ao login. </ol><br>
+
+        <ol> Na página do menu incial terá uma mensagem sobre a página </ol><br>
+
+        <ol>Nas páginas de ação, terror e animação terá séries sobre cada gênero e o usuário poderá dar a nota que achar melhor para cada uma e em cima de casa imagem terá uma mensagem "link" direcionando de onde baixamos cada imagem.</ol>  <br>
+
+        <ol>Na página de contato terá um formulário que o usuário preencherá para entrar em contato com os criadores da página </ol><br>
+
+        <ol> Após preencher o formulário de contato irá direcionar para uma página que irá deixar detalhado que foi preenchido. </ol><br>
+
+        <ol>Na página dos membros terá a descrição de quem participou do projeto e o que foi feito nele.</ol>  </li><br><br>
+
+        <li>O que foi utilizado referente ao PHP e Formulários: <br>
+
+        <ol>Na página de login, utilizamos o session-start para iniciar uma sessão, criamos duas variáveis para usuário e senha e utilizamos o método POST para proteger as informações, if para determinar o nome de usuário e a senha para o acesso ao site e Else para determinar uma mensagem de erro caso o usuário não preencha corretamente.</ol> <br>
+
+        <ol> Já no Index utilizamos a função If Isset para verificar se já foi preenchido o formulário para não apresentar mensagem de erro, caso seja preenchido corretamente apresenta uma mensagem de bem vindo e um link de direcionamento ao menu inicial e o Else para apresentar uma mensagem de erro caso usuário ou senha estejam incorretos.</ol> <br>
+
+        <ol> Para preencher usuário e senha criamos um formulário somente com usuário e senha e um submit para enviar ao login.</ol> <br>
+
+        <ol> Nas categorias: Ação, Terror e Animação, utilizamos If Isset para varificar se já foi preenchido o formulário para não apresentar mensagem de erro, criamos uma variável para armazenar a nota determinada pelo usuário, para isso utilizamos o switch case e determinamos 5 casos e para cada caso uma mensagem referente a nota determinada pelo usuário, utilizamos o break para apresentar somente a mensagem referente a nota que o usuário deu para a série e para ele conseguir avaliar utilizamos um form e para cada form utilizamos o option e em vez de utilizar o option com números, determinamos o valor por estrelas e limitamos a 5 estrelas no máximo, após escolha da nota um submit para enviar a nota.</ol> <br>
+
+        <ol>No formulário de contato utilizamos form para nome, e-mail, telefone e mensagem e um submit para enviar os dados, após preencher e enviar todos os dados criamos uma página para a mensagem que foi enviada pelo formulário de contato, nesta página criamos uma variável para cada form (nome, e-mail, telefone e mensagem) utilizando o metodo POST para deixar as informações mais seguras, e um echo para mostrar a mensagem que foi enviada.</ol> </li> <br>
+
+        <li>Obs: <br>
+            <ol>Professor estamos te enviando o banco de dados junto, conseguimos criar ele e e registrar alguns dados nele pelo MySql mas não conseguimos fazer a comunicação entre a página e ele, estamos enviando somente para o senhor ver o que fizemos de errado outra observação que tinha conversado com o senhor era a questão do display flex e o senhor pediu pra colocar a resolução do manitor: 1366 x 768 </ol>
+        </li>
+    </div>
+</body>    
+</html>
